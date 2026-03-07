@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --color-primary: #16a34a;
+}
+
+* {
+  font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+}
+
+body {
+  background-color: #fafaf5;
+  color: #1f2937;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #14532d 0%, #166534 30%, #15803d 60%, #16a34a 100%);
+}
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+input, select, textarea, button {
+  min-height: 44px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
